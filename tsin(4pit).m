@@ -1,0 +1,10 @@
+disp('Growing(Decaying Exponentil Sequence)');
+N=input('Enter no of samples');
+c=input('Enter constant values');
+a=input('Enter exponent values');
+n=0:0.25:N;
+x=c*exp(a*n);
+stem(n,x);
+xlabel('Sample');
+ylabel('Amplitude');
+title('Exponential signal');
